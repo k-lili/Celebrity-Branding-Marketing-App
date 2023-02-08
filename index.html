@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mirror Official Website</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Index/MirrorLogo.png" type="image/x-icon">
+</head>
+
+<body onload="showMirrorImg('image/Index/MirrorTeam7.jpg', 'image/Index/MirrorTeam5.jpg','image/Index/MirrorTeam1.jpg')">
+    <header>
+        <img class="logo" src="image/Index/MirrorLogo.png" alt="Mirror Logo" width="150" height="100">
+        <nav class="navbar">          
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="newrelease.html">New Releases</a>
+                    <ul class="dropdown">
+                        <li><a href="newrelease.html#hotanchor">What's Hot?</a></li>
+                        <li><a href="newrelease.html#musicanchor">Music</a></li>
+                        <li><a href="newrelease.html#dramaanchor">Drama & TV Shows</a></li>
+                        <li><a href="newrelease.html#commercialanchor">Commercials</a></li>
+                    </ul>
+                </li>
+                <li><a href="merchandise.html">Merchandise</a>
+                    <ul class="dropdown">
+                        <li><a href="merchandise.html#cdboxset">CDs & Box Set</a></li>
+                        <li><a href="merchandise.html#tshirt">T-shirts</a></li>
+                        <li><a href="merchandise.html#misc">Miscellaneous Items</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <div class="heroimage">
+        <img id="mirrorimg" src="image/Index/MirrorTeam1.jpg" alt="Mirror Team Shot" >
+    </div>
+
+    <main>
+    <div class="intro">
+        <h2 class="title">We are MIRROR</h2>
+        <h3 class="subtitle">Together we reflect unlimited possibilities</h3>
+        <h4>A Hong Kong Canto-pop band…</h4>
+
+        <div class="containermirrorintro"> 
+            <ul class="mirrorintro" style="list-style-type:square">
+                <li class="mirrorpts"><span class="highlight">Formed by 12 unique boys</span>, all filled with great passion for performance. </li>
+                <li class="mirrorpts">Strived through a 6-month journey in <span class="highlight">ViuTV’s reality talent show “Good Night Show – King Maker”</span> (literally “star maker” in Cantonese) with passion and persistence, competing against 99 shortlisted young male talents in front of all Hong Kong audience.</li>
+                <li class="mirrorpts">Named MIRROR, because mirror could <span class="highlight">reflect the most authentic face of each member</span>, just like how they showcased themselves in the reality show. At the same time, each unique member is like an individual mirror. When 12 mirrors are put together, they could <span class="highlight">reflect infinite possibilities.</span></li>
+                <li class="mirrorpts"><span class="highlight">Debuted on November 3, 2018</span> with their first single – “In a Second”. Captured a number of awards, including Fairchild Radio Canadian Chinese Pop Music Award’s “Best New Groups” in 2019 and “Best Group” in 2020.</li>
+                <li class="mirrorpts">Believes in the revival of the Canto-pop culture. Conveys a new form of Hong Kong spirit of “perseverance and solidarity” amid the COVID-19 pandemic.</li>
+            </ul>
+    
+            <figure class="mirrorintroimg">
+                <a href="https://www.youtube.com/watch?v=JSXwLFUdfKw">
+                <img src="image/Index/KingMaker_KeungTo.jpg" alt="King Maker Winner" width="400"></a>
+                <figcaption>Keung To, Winner of Good Night Show King Maker (click on image for video) <br>Source: U Lifestyle</figcaption>
+            </figure>
+        </div>
+       
+
+    </div>
+    <div class="section2">
+        <h2 class="title">What's Coming Up?</h2>
+        
+        <div class="eventcontainer">       
+            <div id="calendar">     
+                <table>
+                    <caption>Event Schedule for December 2021</caption>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td class="nov" colspan="3"></td>
+                        <td class="dec">1</td>
+                        <td class="dec">2</td>
+                        <td class="dec">3</td>
+                        <td class="dec">4</td>
+                    </tr>
+                    <tr>
+                        <td class="dec">5</td>
+                        <td class="dec">6</td>
+                        <td class="dec" colspan="2" id="event1" onclick='td1click()'>7 & 8<br><span id="eventName1">MOOV LIVE Music On The Road</span></td>
+                        <td class="dec">9</td>
+                        <td class="dec">10</td>
+                        <td class="dec">11</td>
+                    </tr>
+                    <tr>
+                        <td class="dec">12</td>
+                        <td class="dec">13</td>
+                        <td class="dec">14</td>
+                        <td class="dec">15</td>
+                        <td class="dec">16</td>
+                        <td class="dec">17</td>
+                        <td class="dec">18</td>
+                    </tr>
+                    <tr>
+                        <td class="dec">19</td>
+                        <td class="dec">20</td>
+                        <td class="dec">21</td>
+                        <td class="dec">22</td>
+                        <td class="dec">23</td>
+                        <td class="dec">24</td>
+                        <td class="dec">25</td>
+                    </tr>
+                    <tr>
+                        <td class="dec">26</td>
+                        <td class="dec">27</td>
+                        <td class="dec">28</td>
+                        <td class="dec">29</td>
+                        <td class="dec">30</td>
+                        <td class="dec" colspan="2" id="event2" onclick='td2click()'>31 & 1 Jan<br><span id="eventName2">HK New Year Countdown Concert</span></td>
+                    </tr>  
+                </table>
+                <p class="remarks">Click on the events in the calendar for details.</p>
+            </div>
+            <div class="eventBox">
+                <div class="eventframe">
+                    <figure class="eventfigure">
+                        <img id="eImage" src="image/Index/Events/MoovLive.jpg" width="300" height="300">
+                        <figcaption id="inputSource">Photo source: Timable</figcaption>
+                    </figure>
+                
+                    <div class="eventDetails">
+                        <p id="eName">Event Name:</p>
+                        <p id="inputName">Moov Live Music On The Road</p>
+                        <p id="eDate">Date & Time:</p>
+                        <p id="inputDate">Dec 7-8, 2021   8:15pm</p>
+                        <p id="eVenue">Venue:</p>
+                        <p id="inputVenue">Hall 5BC, Hong Kong Convention and Exhibition Centre</p>
+                        <p id="eMembers">Appearing members:</p>
+                        <p id="inputMembers">Anson Kong, Anson Lo, Edan Lui, Ian Chan, Jer Lau, Keung To</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>s
+        <div class="socialmedia">
+            <h5 class="socialname">MIRROR.WeAre</h5>
+            <a href="https://www.facebook.com/MIRROR.WeAre/">
+            <img class="socialplatform" src="image/Index/FBlogo.png" alt="Facebook logo" width="50" height="50"></a>
+            <a href="https://www.instagram.com/mirror.weare/">
+            <img class="socialplatform" src="image/Index/IGlogo.png" alt="Instagram logo" width="50" height="50"></a>
+            <a href="https://www.youtube.com/mirrorweare">
+            <img class="socialplatform" src="image/Index/YTlogo.png" alt="YouTube logo" width="50" height="50"></a>
+        </div>
+        
+        <p><small>Copyright &copy; 2021 Web Development Final Project &nbsp;&nbsp; Created by Karli Li, Student ID: 300350713</small></p>
+    </footer>
+    <script src="index.js"></script> 
+</body>
+</html>

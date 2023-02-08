@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mirror Official Website</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Index/MirrorLogo.png" type="image/x-icon">
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <img class="logo" src="image/Index/MirrorLogo.png" alt="Mirror Logo" width="150" height="100">
+        <nav class="navbar">          
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="newrelease.html">New Releases</a>
+                    <ul class="dropdown">
+                        <li><a href="newrelease.html#hotanchor">What's Hot?</a></li>
+                        <li><a href="newrelease.html#musicanchor">Music</a></li>
+                        <li><a href="newrelease.html#dramaanchor">Drama & TV Shows</a></li>
+                        <li><a href="newrelease.html#commercialanchor">Commercials</a></li>
+                    </ul>
+                </li>
+                <li><a href="merchandise.html">Merchandise</a>
+                    <ul class="dropdown">
+                        <li><a href="merchandise.html#cdboxset">CDs & Box Set</a></li>
+                        <li><a href="merchandise.html#tshirt">T-shirts</a></li>
+                        <li><a href="merchandise.html#misc">Miscellaneous Items</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <div class="heroimage">
+        <img src="image/Index/MirrorTeam1.jpg" alt="Mirror Team Shot">
+    </div>
+
+    <main >
+    <div class="intro">
+        <h2 class="title">Contact us</h2>
+        <h3 class="subtitle">We’d love to hear from you. Please fill out the contact form below for any business opportunities.</h3>
+        <br>
+    
+        <div class="contactus">
+            <form class="contactusform">
+                <p><span>*required information</span><br></p>
+                <label class="formlabel" for="Title">Title:*</label>
+                    <input class="forminput" list="title" name="Title" id="Title" required>
+                    <datalist id="title">
+                        <option value="Mr.">
+                        <option value="Mrs.">
+                        <option value="Ms.">
+                    </datalist><br>
+
+                <label class="formlabel">First name:*</label>
+                <input class="forminput" type="text" name="FirstName" id="FirstName" placeholder="first name" required>
+                <br>
+
+                <label class="formlabel">Last name:*</label>
+                <input class="forminput" name="LastName" id="LastName" placeholder="last name" required>
+                <br>
+                
+                <label class="formlabel">Company name:*</label>
+                <input class="forminput" name="Company" id="Company" placeholder="company name" required>
+                <br>   
+
+                <label class="formlabel">Phone number:*</label>
+                <input class="forminput" type="number" name="Tel" id="Tel" placeholder="+countrycode - local number" required>
+                <br>
+
+                <label class="formlabel">Email:*</label>
+                <input class="forminput" type="email" name="Email" id="Email" required>
+                <br>
+
+                <label class="formlabel">Address:</label>
+                <input class="forminput" type="text" name="Address" id="Address">
+                <br>
+                
+                <label class="formlabel">City:</label>
+                <input class="forminput" type="text" name="City" id="City">
+                <br>
+
+                <label class="formlabel">Country:</label>
+                <input class="forminput" type="text" name="Country" id="State">
+                <br>
+
+                <label class="formlabel">Postal code:</label>
+                <input class="forminput" type="text" name="PostalCode" id="PostalCode">
+                <br>
+
+                <div class="speciallabel">
+                    <label class="labellong">Nature of business opportunities: (select all that apply)</label>
+                    <br>
+                    <input type="checkbox" name="opportunity" id="commercial" value="Commercial">
+                    <label for="commercial">Commercial</label>
+                    <br>
+
+                    <input type="checkbox" name="opportunity" id="event" value="Event">
+                    <label for="event">Event</label>
+                    <br>
+
+                    <input type="checkbox" name="opportunity" id="movie" value="Movie">
+                    <label for="movie">Movie</label>
+                    <br>
+
+                    <input type="checkbox" name="opportunity" id="interview" value="Interview">
+                    <label for="interview">Media Interview</label>
+                    <br>
+
+                    <input type="checkbox" name="opportunity" id="others" value="Others">
+                    <label for="others">Others</label>
+                    <br>
+                </div>
+                
+                <div class="speciallabel">
+                    <label class="labellong" for="proposal">Details about your proposed business opportunity:*</label>​
+                    <textarea name="comments" id="proposal" rows="10" cols="70" placeholder="Brief description of your opportunity here" required></textarea>
+                    <br>
+                </div>
+                
+                    <label class="formlabel">Estimated budget:</label>
+                    <input class="forminput" type="text" name="budget" id="Budget">
+                    <br>
+
+                    <label class="formlabel">Attachment: (if any)</label>
+                    <input class="forminput" type="file" id="myfile" name="myfile" multiple><br><br>
+                
+                <div class="buttoncontainer">
+                    <button class="contactusbutton" type="submit" onclick="submitRequest(this)">Submit</button>      
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+    </main>
+    
+    <footer>
+        <div class="socialmedia">
+            <h5 class="socialname">MIRROR.WeAre</h5>
+            <a href="https://www.facebook.com/MIRROR.WeAre/">
+            <img class="socialplatform" src="image/Index/FBlogo.png" alt="Facebook logo" width="50" height="50"></a>
+            <a href="https://www.instagram.com/mirror.weare/">
+            <img class="socialplatform" src="image/Index/IGlogo.png" alt="Instagram logo" width="50" height="50"></a>
+            <a href="https://www.youtube.com/mirrorweare">
+            <img class="socialplatform" src="image/Index/YTlogo.png" alt="YouTube logo" width="50" height="50"></a>
+        </div>
+        
+        <p><small>Copyright &copy; 2021 Web Development Final Project &nbsp;&nbsp; Created by Karli Li, Student ID: 300350713</small></p>
+    </footer>
+    
+    <script src="contactus.js"></script>
+
+</div>
+</body>
+</html>
